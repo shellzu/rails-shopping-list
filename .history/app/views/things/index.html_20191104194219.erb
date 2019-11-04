@@ -1,0 +1,17 @@
+<h1>買いものリスト</h1>
+<table>
+    <thead>
+        <tr>
+            <th>買うもの</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @things.each do |thing| %>
+        <tr>
+            <td><%= thing.title %></td>
+            <td><%= %></td>
+        </tr>
+        <% end %>
+    </tbody>
+</table>
+<%= link_to '追加', new_thing_path %>

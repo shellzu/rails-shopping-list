@@ -1,0 +1,14 @@
+<h1>買いものリスト</h1>
+<table>
+    <thead>
+        <tr>
+            <th>買うもの</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @things.each de |thing| %>
+        <tr>
+            <td><%= thing.title></td>
+        </tr>
+    </tbody>
+</table>
